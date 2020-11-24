@@ -20,9 +20,11 @@ RUN	apt-get install htop
 
 # 3) install packages
 RUN pip install --no-cache-dir networkx scipy python-louvain
+RUN apt-get install -y htop gcc openjdk-8-jdk ant
 
 # 4) change back to notebook user
 COPY /run_jupyter.sh /
+RUN chmod 755 /run_jupyter.sh
 USER $NB_UID
 
 # Override command to disable running jupyter notebook at launch
