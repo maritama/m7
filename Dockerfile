@@ -18,7 +18,7 @@ FROM $BASE_CONTAINER
 FROM ucsdets/datascience-notebook:2020.2-stable
 
 
-LABEL maintainer="Tiange Wan<t2wan@ucsd.edu>"
+LABEL maintainer="Yicen Ma<yim095@ucsd.edu>"
 
 # 2) change to root to install packages
 USER root
